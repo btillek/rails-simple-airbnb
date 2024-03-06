@@ -1,0 +1,14 @@
+<h2>Available flats</h2>
+<div class="all-cards">
+  <% @flats.each do |flat| %>
+  <div class="card" style="width: 18rem; height: 18rem;">
+    <%# <img class="card-img-top" src="..." alt="Card image cap"> %>
+    <div class="card-body">
+      <h5 class="card-title"><%= flat.name %></h5>
+      <p class="card-text"><%= flat.description %></p>
+      <div><%= flat.price_per_night %> € / night</div> <div> <%= flat.number_of_guests %> guests</div>
+      <%# <a href="#" class="btn btn-primary">More details</a> %>
+    </div>
+  </div>
+  <% end %>
+</div>
